@@ -38,10 +38,17 @@
     .label {
       padding: 12px;
       font-size: 14px;
-    }
-    .mono {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button.copy-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 12px;
     }
   </style>
 </head>
@@ -50,44 +57,47 @@
 
   <h2>Primärfarben</h2>
   <div class="palette">
-    <div class="swatch">
-      <div class="color-box" style="background:#c41b31"></div>
-      <div class="label">Berlin Rot<br>#c41b31</div>
-    </div>
-    <div class="swatch">
-      <div class="color-box" style="background:#ffffff; border:1px solid #ddd"></div>
-      <div class="label">Weiß<br>#FFFFFF</div>
-    </div>
-    <div class="swatch">
-      <div class="color-box" style="background:#000000"></div>
-      <div class="label">Schwarz<br>#000000</div>
-    </div>
+    <div class="swatch"><div class="color-box" style="background:#c41b31"></div><div class="label">Berlin Rot<br>#c41b31 <button class="copy-btn" data-hex="#c41b31">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#ffffff; border:1px solid #ddd"></div><div class="label">Weiß<br>#FFFFFF <button class="copy-btn" data-hex="#FFFFFF">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#000000"></div><div class="label">Schwarz<br>#000000 <button class="copy-btn" data-hex="#000000">Copy</button></div></div>
   </div>
 
   <h2>Grauwerte</h2>
   <div class="palette">
-    <div class="swatch"><div class="color-box" style="background:#333333"></div><div class="label">80% Schwarz<br>#333333</div></div>
-    <div class="swatch"><div class="color-box" style="background:#666666"></div><div class="label">60% Schwarz<br>#666666</div></div>
-    <div class="swatch"><div class="color-box" style="background:#999999"></div><div class="label">40% Schwarz<br>#999999</div></div>
-    <div class="swatch"><div class="color-box" style="background:#cccccc"></div><div class="label">20% Schwarz<br>#cccccc</div></div>
-    <div class="swatch"><div class="color-box" style="background:#e6e6e6"></div><div class="label">10% Schwarz<br>#e6e6e6</div></div>
-    <div class="swatch"><div class="color-box" style="background:#f2f2f2"></div><div class="label">5% Schwarz<br>#f2f2f2</div></div>
+    <div class="swatch"><div class="color-box" style="background:#333333"></div><div class="label">80% Schwarz<br>#333333 <button class="copy-btn" data-hex="#333333">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#666666"></div><div class="label">60% Schwarz<br>#666666 <button class="copy-btn" data-hex="#666666">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#999999"></div><div class="label">40% Schwarz<br>#999999 <button class="copy-btn" data-hex="#999999">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#cccccc"></div><div class="label">20% Schwarz<br>#cccccc <button class="copy-btn" data-hex="#cccccc">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#e6e6e6"></div><div class="label">10% Schwarz<br>#e6e6e6 <button class="copy-btn" data-hex="#e6e6e6">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#f2f2f2"></div><div class="label">5% Schwarz<br>#f2f2f2 <button class="copy-btn" data-hex="#f2f2f2">Copy</button></div></div>
   </div>
 
   <h2>Sekundärfarben</h2>
   <div class="palette">
-    <div class="swatch"><div class="color-box" style="background:#b5d4b7"></div><div class="label">Hellgrün<br>#b5d4b7</div></div>
-    <div class="swatch"><div class="color-box" style="background:#67b18d"></div><div class="label">Mittelgrün<br>#67b18d</div></div>
-    <div class="swatch"><div class="color-box" style="background:#357a5d"></div><div class="label">Grün<br>#357a5d</div></div>
-    <div class="swatch"><div class="color-box" style="background:#0e4c38"></div><div class="label">Dunkelgrün<br>#0e4c38</div></div>
-    <div class="swatch"><div class="color-box" style="background:#bdcde7"></div><div class="label">Hellblau<br>#bdcde7</div></div>
-    <div class="swatch"><div class="color-box" style="background:#7694ce"></div><div class="label">Mittelblau<br>#7694ce</div></div>
-    <div class="swatch"><div class="color-box" style="background:#324fa3"></div><div class="label">Blau<br>#324fa3</div></div>
-    <div class="swatch"><div class="color-box" style="background:#13245b"></div><div class="label">Dunkelblau<br>#13245b</div></div>
-    <div class="swatch"><div class="color-box" style="background:#f8ed45"></div><div class="label">Gelb<br>#f8ed45</div></div>
-    <div class="swatch"><div class="color-box" style="background:#db9f29"></div><div class="label">Orange<br>#db9f29</div></div>
-    <div class="swatch"><div class="color-box" style="background:#e5bbd0"></div><div class="label">Rosa<br>#e5bbd0</div></div>
-    <div class="swatch"><div class="color-box" style="background:#988bc2"></div><div class="label">Violett<br>#988bc2</div></div>
+    <div class="swatch"><div class="color-box" style="background:#b5d4b7"></div><div class="label">Hellgrün<br>#b5d4b7 <button class="copy-btn" data-hex="#b5d4b7">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#67b18d"></div><div class="label">Mittelgrün<br>#67b18d <button class="copy-btn" data-hex="#67b18d">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#357a5d"></div><div class="label">Grün<br>#357a5d <button class="copy-btn" data-hex="#357a5d">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#0e4c38"></div><div class="label">Dunkelgrün<br>#0e4c38 <button class="copy-btn" data-hex="#0e4c38">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#bdcde7"></div><div class="label">Hellblau<br>#bdcde7 <button class="copy-btn" data-hex="#bdcde7">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#7694ce"></div><div class="label">Mittelblau<br>#7694ce <button class="copy-btn" data-hex="#7694ce">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#324fa3"></div><div class="label">Blau<br>#324fa3 <button class="copy-btn" data-hex="#324fa3">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#13245b"></div><div class="label">Dunkelblau<br>#13245b <button class="copy-btn" data-hex="#13245b">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#f8ed45"></div><div class="label">Gelb<br>#f8ed45 <button class="copy-btn" data-hex="#f8ed45">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#db9f29"></div><div class="label">Orange<br>#db9f29 <button class="copy-btn" data-hex="#db9f29">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#e5bbd0"></div><div class="label">Rosa<br>#e5bbd0 <button class="copy-btn" data-hex="#e5bbd0">Copy</button></div></div>
+    <div class="swatch"><div class="color-box" style="background:#988bc2"></div><div class="label">Violett<br>#988bc2 <button class="copy-btn" data-hex="#988bc2">Copy</button></div></div>
   </div>
+
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const hex = btn.getAttribute('data-hex');
+        navigator.clipboard.writeText(hex).then(() => {
+          btn.textContent = 'Copied!';
+          setTimeout(() => btn.textContent = 'Copy', 1000);
+        });
+      });
+    });
+  </script> 
 </body>
 </html>
